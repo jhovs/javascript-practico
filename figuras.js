@@ -7,7 +7,9 @@ const perimetroTriangulo = (lado1,lado2,base) => lado1 + lado2 + base;
 const areaTriangulo = (base,altura) => (base * altura) / 2;
 
 // Codigo del circulo 
-pi = Math.PI;
+const pir = Math.PI;
+const pi = pir.toFixed(4); 
+
 
 const diametroCirculo = (radio) => radio * 2;
 const perimetroCirculo = (radio) => (radio * 2) * pi;
@@ -33,7 +35,6 @@ function calcularAreaCuadrado(){
     alert(`El área del cuadrado es ${area} cm`);
     
 }
-
 
 //Funciones para triangulo en figuras.html y obtener valor de inputs 
 
@@ -62,4 +63,24 @@ function  calcularAreaTriangulo(){
     const area = areaTriangulo(base,altura);
 
     alert(`El area del triangulo es ${area}`);
+}
+
+//Funciones para circulo en figuras.html y obtener valor de inputs 
+
+function calcularPerimetroCirculo(){
+    const radioCirculo = document.getElementById("inputCirculo");
+    const radio = Number(radioCirculo.value);
+
+    const perimetro = perimetroCirculo(radio);
+
+    alert(`El perimetro del circulo es ${perimetro}`);
+}
+
+function calcularAreaCirculo(){
+    const radioCirculo = document.getElementById("inputCirculo");
+    const radio = Number(radioCirculo.value);
+
+    const area = areaCirculo(radio);
+
+    alert(`El area del circulo es ${area}`);
 }

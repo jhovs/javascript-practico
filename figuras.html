@@ -17,8 +17,8 @@
     <title>Taller 1: Figuras geometricas</title>
   </head>
   <body>
-    <header class="text-center">
-        <h1>Figuras geometricas </h1>
+    <header class="header text-center">
+        <h1>Figuras Geométricas </h1>
         <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
 
@@ -49,20 +49,20 @@
             <div class="col-md col-12 figuras__triangulo"> 
 			<form>
 				<br>
-                <h2>Calcula el áera y perimetro de un triangulo</h2><br>
+                <h2>Calcula el áera y perimetro de un triángulo</h2><br>
                 <div class="row">
                     <div class="col-12">
                         <label for="lado1Triangulo">Escribe los valores que se te solicitan:</label>
-                        <input id="lado1Triangulo" class="form-control" type="number" placeholder="Introduce lado 1 del triangulo">
+                        <input id="lado1Triangulo" class="form-control" type="number" placeholder="Introduce lado 1 del triángulo">
 
                         <label for="lado2Triangulo">&nbsp; </label>
-                        <input id="lado2Triangulo" class="form-control" type="number" placeholder="Introduce lado 2 del triangulo">
+                        <input id="lado2Triangulo" class="form-control" type="number" placeholder="Introduce lado 2 del triángulo">
 
                         <label for="baseTriangulo">&nbsp; </label>
-                        <input id="baseTriangulo" class="form-control" type="number" placeholder="Introduce la base del triangulo">
+                        <input id="baseTriangulo" class="form-control" type="number" placeholder="Introduce la base del triángulo">
 
                         <label for="alturaTriangulo">&nbsp; </label>
-                        <input id="alturaTriangulo" class="form-control" type="number" placeholder="Introduce la altura del triangulo">
+                        <input id="alturaTriangulo" class="form-control" type="number" placeholder="Introduce la altura del triángulo">
                     </div>
                     <div class="col-12">&nbsp;</div>
                     <div class="col-6 text-center"><button type="button" class="btn btn-light btn-sm" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button></div>
@@ -75,11 +75,27 @@
 			<div class="col-1">&nbsp;</div>
 
             <!-- Circulo-->
-            <div class="col-md col-12 figuras__circulo"> C </div>
+            <div class="col-md col-12 figuras__circulo">
+            <form>
+                <br>
+                <h2>Calcula el áera y perimetro de un circulo</h2><br>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="inputCirculo">Escribe cuánto mide el radio de tu circulo:</label>
+                        <input id="inputCirculo" class="form-control" type="number" placeholder="Introduce el radio del circulo">
+                    </div>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-6 text-center"><button type="button" class="btn btn-light btn-sm" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button></div>
+                    <div class="col-6 text-center"><button type="button" class="btn btn-light btn-sm" onclick="calcularAreaCirculo()">Calcular el áera</button></div>
+                    <div class="col-12">&nbsp;</div>
+                </div>
+            </form>
+            </div>
         </div>
    
     </div>
     </section>
+    <br>
 
     <script src="./figuras.js"></script>
     <!-- Get Bootstrap opc 1 -->
