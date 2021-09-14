@@ -1,17 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./descuentos.css">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 2:  Porcentajes y descuentos</title>
 </head>
 <body>
-    
-<h1>Porcentajes y descuentos</h1>
+    <header class="header">
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del curso de JavaScript Práctico </p>
+    </header>
 
+    <section>
+    <div class="container">
+        <div class="row porcentajes">
+        <form>
+            <br>
+            <div class="col-12 text-center">
+                <h2>Calcula el precio a pagar de tus productos con descuentos y cupones especiales</h2>
+            </div>
+            <div class="col-12">
+               <div class="row">
+                    <div class="col-12">
+                        <label for="InputPrice">&nbsp;</label>
+                        <input id="InputPrice" class="form-control" type="number" placeholder="Introduce el precio del producto">
+                    </div>
+                    <div class="col-12">
+                        <label for="InputDiscount">&nbsp;</label>
+                        <input id="InputDiscount" class="form-control" type="number" placeholder="Introduce el descuento del producto">
+                    </div>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-dark btn-sm" style="width: 95%;" onclick="ButtonPriceDiscount()">Calcular descuento </button>
+                    </div>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-sm-3">
+                                <label for="InputCupon">Codigo Cupón:</label>
+                            </div>
+                            <div class="col-12 col-sm-5">
+                                <input id="InputCupon" class="form-control" type="text" placeholder="Codigo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-12">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-outline-dark btn-sm" style="width: 95%;" onclick="ButtonPriceCupon()">Calcular Cupón </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">&nbsp;</div>
+                    <div class="col-12">
+                        <p id="ResultP"></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    </section>
+    
 <script src="./descuentos.js"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>
