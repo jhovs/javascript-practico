@@ -16,7 +16,6 @@ const coupons = [
     },
 ];
 
-
 //Functiones 
 const calcularPrecioConDescuento = (precio,descuento) => (precio * (100 - descuento)) / 100 ;
 
@@ -32,7 +31,6 @@ function cupon(precio,nameCupon){
         return descuentoCupon;
     }
 }
-
 
 //function para html - javacript
 function ButtonPriceDiscount(precio,descuento){
