@@ -1,0 +1,24 @@
+body{
+    background-color: #F4F9F9;
+    color: #444444;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+.header{
+    text-align: center;
+}
+
+.reto{
+    background-color: #FFFFFF;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 4px 4px 15px 1px rgba(36,36,36,1);
+    -moz-box-shadow: 4px 4px 15px 1px rgba(36,36,36,1);
+    box-shadow: 4px 4px 15px 1px rgba(36,36,36,1);
+}

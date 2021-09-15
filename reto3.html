@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./reto3.css">
+
+    <title>Taller #3: Promedio, moda y media</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Taller #3 - Reto </h1>
+      <p>Este es el tercer taller del curso práctico de JavaScript | Modulo - Reto</p><br>
+    </header>
+    <section>
+    <div class="container">
+      <div class="row reto">
+      <form>
+        <br>
+        <div class="col-12">
+          <h2>Calcula el promedio, media y moda</h2><br>
+        </div>
+
+        <div class="col-12">
+
+          <div class="row">
+            <div class="col-12">
+              <label>Coloca el conjunto de datos a valorar</label>
+              <input id="InputPromedio" class="form-control" type="text" placeholder="Ej. 1,30,5,7,34,23,4">
+            </div>
+          </div>
+
+          <div class="col-12">&nbsp;</div>
+
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark btn-sm" style="width: 95%;" onclick="ButtonPromedio()">Calcular Promedio </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark btn-sm" style="width: 95%;" onclick="ButtonMedia()">Calcular Media </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark btn-sm" style="width: 95%;" onclick="ButtonModa()">Calcular Moda </button>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="col-12">&nbsp;</div>
+
+        <div class="col-12">
+          <p id="ResultP"></p>
+        </div>
+
+      </form>
+      </div>
+    </div>
+    </section>
+
+    <script src="./reto3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
+</html>
