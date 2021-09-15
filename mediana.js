@@ -23,7 +23,9 @@ function cantidadMediana(lista){
         const elemento2 = lista[mitadLista];
         const promedioElementos = calcularMediaAritmetica([elemento1,elemento2,]);
         mediana = promedioElementos;
+        return mediana;
     }else{
         mediana = lista[mitadLista];
+        return mediana;
     }
 }
