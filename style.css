@@ -1,0 +1,28 @@
+body{
+    background-color: #393E46;
+    color: #EEEEEE;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: right;
+}
+
+
+h1{
+    font-family: 'Special Elite', cursive;
+}
+
+h2{
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.base{
+    background-color: #00ADB5;
+    color: #AAD8D3;
+}
